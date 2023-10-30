@@ -4,11 +4,13 @@ const books_model = require('../models/books');
 
 router.post('/addBooks', async (req, res, next) => {
     try {
-        let { author, summary, title } = req.body;
+        let { author, summary, title, book_id } = req.body;
         let current_id = await books_model.findOne({}).sort({ book_id: -1 }).limit(1),
-            book_id = current_id?.book_id ? current_id?.book_id + 1 : 1;
+            new_book_id = current_id?.book_id ? current_id?.book_id + 1 : 1;
+
+        book_id = book_id ? book_id : new_book_id
         await books_model.updateOne(
-            { title },
+            { book_id },
             {
                 $set: {
                     book_id,

@@ -15,7 +15,7 @@ this is unique_id which will autoincreament whenever new books(docs) added to co
 
 ### `title`
 
-this is unique title, which will be provided by user, which refers book title
+this is title of book, which will be provided by user, which refers book title
 
 ### `author`
 
@@ -48,7 +48,6 @@ this api help to delete specific book by providing ID
 
 # DECISIONS/ASSUMPTIONS:
 
-1. Have assume title is unique, more than 1 book shouldn't carries same title logically
-2. optimize API's like GET and POST in such a way that it manage two responses
+optimize API's like GET and POST in such a way that it manage two responses
 
 
