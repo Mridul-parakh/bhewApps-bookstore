@@ -1,5 +1,5 @@
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, "credentials.env") });
+require('dotenv').config({ path: path.join(__dirname, "credential.env") });
 const cors = require('cors');
 const logger = require('morgan');
 const express = require('express');

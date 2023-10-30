@@ -1,7 +1,8 @@
 # STEPS TO RUN APPLICATION
 
 1. npm i
-2. npm start
+2. add credential.env file in your root directory and db url in key "DB_STRING"
+3. npm start
 
 
 # DESCRIPTION OF MODELS
